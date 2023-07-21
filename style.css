@@ -1,0 +1,72 @@
+/** default values for text and such **/
+html{
+    color: black;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/** The appearance of the header items **/
+header{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+/** make the buttons looks good **/
+header a{
+    font-size: 25px;
+    color: #000;
+
+    /** oval outlines **/
+    margin-right: 10px; /** button spacing 10 **/
+    display: inline-block;
+    padding: 5px 10px; /** oval size 5 10**/
+    border: 2px solid #333;
+    border-radius: 50px; /* Use a large value to make it ovular 50px */
+    background-color: white;
+    text-decoration: none; /** remove underline **/
+    transition: all 100ms;
+}
+
+/** make button highlight **/
+header a:hover{
+    background-color: gray;
+    font-size: 30px;
+    transition: all 500ms;
+}
+
+header hr{
+    height: 4px; /** thickness **/
+    background-color: #000; /** color **/
+    border: none;
+}
+
+
+main{
+    font-size: large;
+    overflow:hidden;
+    margin: 8px;
+    flex: 1;
+    /**padding-bottom: 100px;
+    box-sizing: border-box;**/
+}
+
+
+
+footer {
+    background-color: #EEE;
+    color: black;
+    padding-bottom: 20px;
+}
